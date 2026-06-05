@@ -18,7 +18,18 @@ const project = {
     "長照據點補助：符合偏鄉服務條件",
     "食物銀行企劃：已補上效益指標",
     "CSR 媒合名單新增 5 家企業"
-  ]
+  ],
+  "ui": {
+    "eyebrow": "社福補助企劃",
+    "primaryNav": "產生企劃",
+    "capabilityNav": "補助工具",
+    "flowNav": "提案流程",
+    "actionLabel": "產生企劃",
+    "capabilityTitle": "補助與企劃工具",
+    "flowTitle": "企劃產製流程",
+    "recordTitle": "案件動態",
+    "operationNotice": "已移到補助企劃區，可解析簡章、產生草稿並補上依據。"
+  }
 };
 
 const canvas = document.getElementById("visualCanvas");
@@ -198,7 +209,7 @@ function showNotice(action) {
   const notice = document.getElementById("notice");
   if (!notice) return;
   const map = {
-    operate: "操作中心已就緒，所有作業皆可處理。",
+    operate: project.ui?.operationNotice || "已定位到主要工作區。",
     deploy: "課程資源批次已建立。",
     audit: "課後統一診斷已完成。",
     start: "低衝擊訓練已開始。",
