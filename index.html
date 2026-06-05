@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>社福企劃助手 Impact Planner</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="--accent:#1d4ed8;--accent2:#ea580c;--accent3:#16a34a;--dark:#111827">
+    <main class="shell">
+      <aside class="rail">
+        <section class="brand">
+          <span class="brand-mark">IP</span>
+          <div>
+            <strong>Impact Planner</strong>
+            <small>把服務需求轉成可執行、可衡量的社福企劃</small>
+          </div>
+        </section>
+        <nav class="nav" id="nav"></nav>
+        <section class="operator">
+          <span>操作身分</span>
+          <strong>全權限展示</strong>
+          <small>免登入，公開版使用模擬資料與完整操作流程。</small>
+        </section>
+      </aside>
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">115505 專業化展示版</p>
+            <h1 id="viewTitle"></h1>
+          </div>
+          <div id="statusLine" class="status-line"></div>
+        </header>
+        <section id="app"></section>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
