@@ -1,520 +1,222 @@
 const project = {
   "id": "115505",
-  "slug": "ntub-115505-social-impact-planner",
-  "repo": "115505",
+  "layout": "impact",
   "title": "社福企劃助手 Impact Planner",
-  "shortName": "Impact Planner",
-  "subtitle": "把服務需求轉成可執行、可衡量的社福企劃",
-  "eyebrow": "115505 專業化展示版",
-  "source": "五專第115505組 社福企劃助手系統手冊",
-  "mark": "IP",
-  "accent": "#1d4ed8",
-  "accent2": "#ea580c",
-  "accent3": "#16a34a",
-  "dark": "#111827",
-  "tabs": [
-    "企劃總覽",
-    "需求盤點",
-    "方案設計",
-    "預算 KPI",
-    "AI 草稿"
+  "short": "Impact Planner",
+  "accent": "#f59e0b",
+  "accent2": "#047857",
+  "dark": "#17251d",
+  "modules": [
+    "補助雷達",
+    "PDF 簡章解析",
+    "企劃書生成",
+    "對話微調",
+    "個案日誌",
+    "捐款管理"
   ],
-  "metrics": [
-    {
-      "label": "進行中企劃",
-      "value": "8",
-      "note": "補助案與服務方案"
-    },
-    {
-      "label": "受益輪廓",
-      "value": "12",
-      "note": "族群需求模型"
-    },
-    {
-      "label": "KPI 完整度",
-      "value": "84%",
-      "note": "產出、結果、影響"
-    },
-    {
-      "label": "預算風險",
-      "value": "2",
-      "note": "人力與材料需補強"
-    }
-  ],
-  "visual": {
-    "mode": "impact",
-    "nodes": [
-      [
-        "需求",
-        "問題與族群",
-        14,
-        30
-      ],
-      [
-        "目標",
-        "改變理論",
-        40,
-        18
-      ],
-      [
-        "服務",
-        "活動與資源",
-        67,
-        32
-      ],
-      [
-        "KPI",
-        "產出與成果",
-        42,
-        68
-      ],
-      [
-        "提案",
-        "補助文件",
-        76,
-        70
-      ]
-    ],
-    "links": [
-      [
-        0,
-        1
-      ],
-      [
-        1,
-        2
-      ],
-      [
-        2,
-        3
-      ],
-      [
-        3,
-        4
-      ],
-      [
-        1,
-        3
-      ]
-    ]
-  },
-  "panels": [
-    {
-      "title": "邏輯模型",
-      "text": "將需求、投入、活動、產出、短中長期成果串成可審查的方案架構。",
-      "tag": "Logic model"
-    },
-    {
-      "title": "補助書草稿",
-      "text": "AI 依組織背景、服務對象與 KPI 產出章節草稿，再由企劃人員修訂。",
-      "tag": "Drafting"
-    },
-    {
-      "title": "預算與風險",
-      "text": "自動檢查人力、材料、行政費比例與衡量指標是否缺漏。",
-      "tag": "Control"
-    }
-  ],
-  "workflow": [
-    "建立服務議題與目標族群",
-    "整理問題證據與利害關係人",
-    "設計活動、服務流程與資源需求",
-    "編列預算與 KPI",
-    "產出企劃書草稿與審查清單"
-  ],
-  "form": {
-    "title": "新增社福企劃",
-    "button": "建立企劃",
-    "fields": [
-      {
-        "name": "topic",
-        "label": "議題",
-        "type": "text",
-        "value": "高齡者數位陪伴與防詐教育"
-      },
-      {
-        "name": "target",
-        "label": "服務對象",
-        "type": "select",
-        "options": [
-          "高齡者",
-          "兒少",
-          "身心障礙者",
-          "新住民家庭"
-        ],
-        "value": "高齡者"
-      },
-      {
-        "name": "outcome",
-        "label": "預期成果",
-        "type": "text",
-        "value": "提升數位安全意識與社交連結"
-      }
-    ]
-  },
-  "recordsTitle": "企劃案件",
   "records": [
-    {
-      "title": "高齡者數位陪伴",
-      "meta": "KPI 9/11 完成 · 預算 38 萬",
-      "status": "修訂中"
-    },
-    {
-      "title": "兒少課後支持",
-      "meta": "需求證據已補齊 · 志工排班待確認",
-      "status": "待審"
-    },
-    {
-      "title": "食物銀行流程優化",
-      "meta": "邏輯模型完整 · 可產出草稿",
-      "status": "可輸出"
-    }
-  ],
-  "insights": [
-    "社福企劃不只需要文字漂亮，更需要需求證據、KPI 與預算一致。",
-    "AI 草稿應標示待人工確認段落，避免產生不存在的服務數據。",
-    "審查清單需涵蓋服務倫理、個資、風險與永續維運。"
-  ],
-  "automation": [
-    "需求摘要",
-    "KPI 缺漏檢查",
-    "預算比例提醒",
-    "企劃書章節草稿"
-  ],
-  "governance": [
-    "不捏造統計",
-    "標示資料來源",
-    "個案資料去識別",
-    "人工定稿"
-  ],
-  "events": [
-    "新增高齡者服務企劃",
-    "AI 補齊活動流程草稿",
-    "預算檢查發現人力費偏低"
+    "長照據點補助：符合偏鄉服務條件",
+    "食物銀行企劃：已補上效益指標",
+    "CSR 媒合名單新增 5 家企業"
   ]
 };
 
-const qs = (selector, root = document) => root.querySelector(selector);
-const qsa = (selector, root = document) => [...root.querySelectorAll(selector)];
-const state = {
-  activeTab: 0,
-  events: [...project.events],
-  records: project.records.map((record) => ({ ...record })),
-  metricBoost: 0,
-  advisorText: ""
-};
+const canvas = document.getElementById("visualCanvas");
+const ctx = canvas ? canvas.getContext("2d") : null;
+let pulse = 0;
 
-function pill(text, type = "ai") {
-  return `<span class="pill ${type}">${text}</span>`;
+function cssVar(name) {
+  return getComputedStyle(document.body).getPropertyValue(name).trim();
 }
 
-function statusType(status) {
-  if (/完成|穩定|正常|活躍|已確認|可輸出|已排程/.test(status)) return "good";
-  if (/待|需|修訂|接近|處理中|進行中|分析中|審核中/.test(status)) return "warn";
-  return "ai";
+function clear(bg = "#ffffff") {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-function toast(message) {
-  const box = qs("#toast");
-  box.textContent = message;
-  box.classList.add("show");
-  clearTimeout(toast.timer);
-  toast.timer = setTimeout(() => box.classList.remove("show"), 2400);
+function text(value, x, y, size = 20, color = "#172033", weight = 800) {
+  ctx.fillStyle = color;
+  ctx.font = weight + " " + size + "px Microsoft JhengHei, Segoe UI, sans-serif";
+  ctx.fillText(value, x, y);
 }
 
-function addEvent(message) {
-  state.events.unshift(message);
-  state.events = state.events.slice(0, 8);
-}
-
-function renderChrome() {
-  qs("#nav").innerHTML = project.tabs.map((tab, index) => `
-    <button class="${index === state.activeTab ? "active" : ""}" data-tab="${index}">${tab}</button>
-  `).join("");
-  qsa("[data-tab]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.activeTab = Number(button.dataset.tab);
-      render();
-    });
-  });
-  qs("#viewTitle").textContent = project.tabs[state.activeTab];
-  qs("#statusLine").innerHTML = [
-    pill("系統正常", "good"),
-    pill("免登入全權限", "ai"),
-    pill(`事件 ${state.events.length}`, "warn")
-  ].join("");
-}
-
-function metricGrid() {
-  return `<div class="metric-grid">${project.metrics.map((metric, index) => {
-    const value = index === 0 && state.metricBoost ? String(Number.parseInt(metric.value, 10) + state.metricBoost || metric.value) : metric.value;
-    return `<article class="metric"><span>${metric.label}</span><strong>${value}</strong><p class="muted">${metric.note}</p></article>`;
-  }).join("")}</div>`;
-}
-
-function visualPanel() {
-  return `<section class="panel"><div class="panel-head"><h2>系統視覺模型</h2><span>${project.source}</span></div><canvas id="visualCanvas" class="visual" width="980" height="420"></canvas></section>`;
-}
-
-function cards(items) {
-  return `<div class="cards">${items.map((item) => `
-    <article class="card">
-      <div class="record-head"><strong>${item.title}</strong>${pill(item.tag || "模組", "ai")}</div>
-      <small>${item.text}</small>
-    </article>
-  `).join("")}</div>`;
-}
-
-function eventList() {
-  return `<div class="events">${state.events.map((event, index) => `
-    <article class="record"><div class="record-head"><strong>${index + 1}. ${event}</strong>${pill(index === 0 ? "最新" : "紀錄", index === 0 ? "warn" : "ai")}</div><small>模擬營運紀錄，供公開展示使用。</small></article>
-  `).join("")}</div>`;
-}
-
-function overview() {
-  return `
-    <section class="view">
-      ${metricGrid()}
-      <div class="grid two">
-        ${visualPanel()}
-        <section class="panel"><div class="panel-head"><h2>專業化模組</h2><span>從學生構想到正式產品流程</span></div>${cards(project.panels)}</section>
-      </div>
-      <div class="grid two">
-        <section class="panel"><div class="panel-head"><h2>核心洞察</h2><span>設計判斷</span></div>${insightList(project.insights)}</section>
-        <section class="panel"><div class="panel-head"><h2>近期事件</h2><span>操作留痕</span></div>${eventList()}</section>
-      </div>
-    </section>
-  `;
-}
-
-function workflow() {
-  return `
-    <section class="view">
-      <div class="grid two">
-        <section class="panel">
-          <div class="panel-head"><h2>主要流程</h2><span>可執行工作流</span></div>
-          <div class="timeline">${project.workflow.map((step, index) => `<div class="step"><span>${index + 1}</span><div><strong>${step}</strong><p class="muted">已整理成公開展示版的互動流程。</p></div></div>`).join("")}</div>
-        </section>
-        <section class="panel">
-          <div class="panel-head"><h2>${project.form.title}</h2><span>模擬建立流程</span></div>
-          <form id="mainForm">${project.form.fields.map(fieldTemplate).join("")}<button type="submit">${project.form.button}</button></form>
-        </section>
-      </div>
-      <section class="panel"><div class="panel-head"><h2>流程狀態</h2><span>建立後會寫入事件紀錄</span></div>${eventList()}</section>
-    </section>
-  `;
-}
-
-function fieldTemplate(field) {
-  if (field.type === "select") {
-    return `<label>${field.label}<select name="${field.name}">${field.options.map((option) => `<option ${option === field.value ? "selected" : ""}>${option}</option>`).join("")}</select></label>`;
-  }
-  return `<label>${field.label}<input name="${field.name}" value="${field.value}"></label>`;
-}
-
-function records() {
-  return `
-    <section class="view">
-      <div class="grid two">
-        <section class="panel"><div class="panel-head"><h2>${project.recordsTitle}</h2><span>業務資料</span></div><div class="records">${state.records.map(recordTemplate).join("")}</div></section>
-        <section class="panel"><div class="panel-head"><h2>分析摘要</h2><span>資料驅動決策</span></div>${insightList(project.insights)}<div class="actions"><button data-action="analyze">重新分析</button><button data-action="approve">核准第一筆待辦</button></div></section>
-      </div>
-      ${visualPanel()}
-    </section>
-  `;
-}
-
-function recordTemplate(record, index) {
-  return `
-    <article class="record">
-      <div class="record-head"><div><strong>${record.title}</strong><small>${record.meta}</small></div>${pill(record.status, statusType(record.status))}</div>
-      <div class="bar" style="--bar:var(--accent2);--value:${Math.max(28, 92 - index * 21)}%"><span></span></div>
-    </article>
-  `;
-}
-
-function automation() {
-  return `
-    <section class="view">
-      <div class="grid two">
-        <section class="panel"><div class="panel-head"><h2>AI / 自動化能力</h2><span>展示版模擬運算</span></div><div class="grid two">${project.automation.map((item, index) => `<article class="card"><strong>${item}</strong><small>狀態：${index % 2 ? "待人工確認" : "已產生建議"}</small></article>`).join("")}</div></section>
-        <section class="panel">
-          <div class="panel-head"><h2>智慧建議</h2><span>依目前資料產生</span></div>
-          <textarea id="advisorInput" rows="5">請根據目前系統狀態提出下一步優化建議。</textarea>
-          <div class="actions"><button data-advisor="risk">風險</button><button data-advisor="next">下一步</button><button data-advisor="report">報告摘要</button></div>
-          <div id="advisorResult" class="card"><strong>建議摘要</strong><small>${state.advisorText || project.insights[0]}</small></div>
-        </section>
-      </div>
-      <section class="panel"><div class="panel-head"><h2>治理原則</h2><span>公開展示版保護界線</span></div><div class="grid three">${project.governance.map((item) => `<article class="card"><strong>${item}</strong><small>正式系統需保留設定、稽核與人工確認流程。</small></article>`).join("")}</div></section>
-    </section>
-  `;
-}
-
-function governance() {
-  return `
-    <section class="view">
-      <div class="grid two">
-        <section class="panel"><div class="panel-head"><h2>治理與稽核</h2><span>可公開展示，不含真實個資</span></div><div class="grid two">${project.governance.map((item) => `<article class="card"><strong>${item}</strong><small>此項已納入公開展示版設計界線。</small></article>`).join("")}</div></section>
-        <section class="panel"><div class="panel-head"><h2>事件紀錄</h2><button class="download" id="downloadBtn">下載摘要</button></div>${eventList()}</section>
-      </div>
-      <section class="panel"><div class="panel-head"><h2>部署準備</h2><span>GitHub Pages</span></div><div class="grid three"><article class="card"><strong>純靜態</strong><small>無後端、資料庫、API key 或真實服務連線。</small></article><article class="card"><strong>免登入</strong><small>管理端、使用端與展示端能力合併開放。</small></article><article class="card"><strong>可部署</strong><small>推送到 main branch 後可設定 Pages / root。</small></article></div></section>
-    </section>
-  `;
-}
-
-function insightList(items) {
-  return `<div class="insights">${items.map((item) => `<article class="record"><strong>${item}</strong><small>依學生文件延伸出的產品化判斷。</small></article>`).join("")}</div>`;
-}
-
-function render() {
-  renderChrome();
-  const views = [overview, workflow, records, automation, governance];
-  qs("#app").innerHTML = views[state.activeTab]();
-  bindCurrentView();
-  drawVisual();
-}
-
-function bindCurrentView() {
-  const form = qs("#mainForm");
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const first = project.form.fields[0];
-      const value = new FormData(form).get(first.name);
-      state.metricBoost += 1;
-      addEvent(`${project.form.button}：${value}`);
-      toast("工作已建立並寫入事件紀錄。");
-      render();
-    });
-  }
-  qsa("[data-action]").forEach((button) => {
-    button.addEventListener("click", () => {
-      if (button.dataset.action === "approve") {
-        const target = state.records.find((record) => /待|需|修訂|處理|審核/.test(record.status));
-        if (target) target.status = "已確認";
-        addEvent("人工審核已更新第一筆待辦資料");
-      } else {
-        addEvent("資料已重新分析並更新洞察摘要");
-      }
-      toast("狀態已更新。");
-      render();
-    });
-  });
-  qsa("[data-advisor]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const mode = button.dataset.advisor;
-      const options = {
-        risk: project.insights[1] || project.insights[0],
-        next: `建議優先完成「${project.workflow[1]}」與「${project.workflow[2]}」，並保留人工確認節點。`,
-        report: `${project.shortName} 目前已具備 ${project.panels.map((p) => p.title).join("、")} 等核心能力。`
-      };
-      state.advisorText = options[mode];
-      addEvent(`AI 顧問產生「${button.textContent}」建議`);
-      toast("AI 顧問已產生建議。");
-      render();
-    });
-  });
-  const download = qs("#downloadBtn");
-  if (download) {
-    download.addEventListener("click", () => {
-      const content = [project.title, "", "近期事件:", ...state.events.map((event) => "- " + event)].join("\n");
-      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = project.slug + "-summary.txt";
-      a.click();
-      URL.revokeObjectURL(url);
-      toast("摘要檔已產生。");
-    });
-  }
-}
-
-function drawVisual() {
-  const canvas = qs("#visualCanvas");
-  if (!canvas) return;
-  const ctx = canvas.getContext("2d");
-  const width = canvas.width;
-  const height = canvas.height;
-  ctx.clearRect(0, 0, width, height);
-  const css = getComputedStyle(document.body);
-  const accent = css.getPropertyValue("--accent").trim();
-  const accent2 = css.getPropertyValue("--accent2").trim();
-  const accent3 = css.getPropertyValue("--accent3").trim();
-  ctx.fillStyle = "#ffffff";
-  ctx.fillRect(0, 0, width, height);
-  if (project.visual.mode === "game") {
-    drawGame(ctx, width, height, accent, accent2, accent3);
-    return;
-  }
-  ctx.strokeStyle = "rgba(20, 35, 55, 0.12)";
-  for (let x = 0; x < width; x += 42) {
-    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
-  }
-  for (let y = 0; y < height; y += 42) {
-    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
-  }
-  const points = project.visual.nodes.map(([title, sub, x, y]) => ({ title, sub, x: width * x / 100, y: height * y / 100 }));
-  ctx.lineWidth = 4;
-  ctx.strokeStyle = "rgba(37, 99, 235, 0.25)";
-  for (const [from, to] of project.visual.links) {
-    ctx.beginPath();
-    ctx.moveTo(points[from].x, points[from].y);
-    ctx.lineTo(points[to].x, points[to].y);
+function rounded(x, y, w, h, color, stroke) {
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, 8);
+  ctx.fillStyle = color;
+  ctx.fill();
+  if (stroke) {
+    ctx.strokeStyle = stroke;
+    ctx.lineWidth = 2;
     ctx.stroke();
   }
-  points.forEach((point, index) => {
-    ctx.fillStyle = index % 3 === 0 ? accent : index % 3 === 1 ? accent2 : accent3;
-    roundRect(ctx, point.x - 88, point.y - 31, 176, 62, 10);
-    ctx.fill();
-    ctx.fillStyle = index % 3 === 2 ? "#101820" : "#fff";
-    ctx.font = "700 20px Microsoft JhengHei, Arial";
-    ctx.fillText(point.title, point.x - 68, point.y - 4);
-    ctx.font = "14px Microsoft JhengHei, Arial";
-    ctx.fillText(point.sub, point.x - 68, point.y + 20);
+}
+
+function drawGrid() {
+  ctx.strokeStyle = "rgba(90,110,130,.15)";
+  ctx.lineWidth = 1;
+  for (let x = 0; x < canvas.width; x += 34) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+  }
+  for (let y = 0; y < canvas.height; y += 34) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+  }
+}
+
+function drawInfra() {
+  clear("#f8fbff"); drawGrid();
+  const a = cssVar("--accent"), b = cssVar("--accent2");
+  const nodes = [[120,120,"課程"],[330,88,"資源池"],[560,130,"VM/LXC"],[300,300,"AI"],[610,330,"網路"],[790,210,"稽核"]];
+  ctx.strokeStyle = "rgba(56,189,248,.45)"; ctx.lineWidth = 4;
+  [[0,1],[1,2],[1,3],[2,4],[4,5],[3,5]].forEach(([i,j]) => { ctx.beginPath(); ctx.moveTo(nodes[i][0],nodes[i][1]); ctx.lineTo(nodes[j][0],nodes[j][1]); ctx.stroke(); });
+  nodes.forEach((n,i) => { rounded(n[0]-48,n[1]-28,96,56,i%2?a:b,"#fff"); text(n[2],n[0]-28,n[1]+7,18,"#fff",900); });
+  text("Campus Cloud Resource Topology", 26, 40, 22, "#0f172a", 900);
+}
+
+function drawLanguage() {
+  clear("#fffdf8");
+  rounded(34, 28, canvas.width - 68, 170, "#fef2f2", "#fecaca");
+  text("即拍即學", 58, 76, 24, "#991b1b", 900);
+  ["駅", "切符", "弁当", "出口"].forEach((word, i) => { rounded(58 + i * 70, 108, 54, 54, i % 2 ? cssVar("--accent2") : cssVar("--accent"), "#fff"); text(word, 71 + i * 70, 143, 20, "#fff", 900); });
+  rounded(34, 228, canvas.width - 68, 120, "#eff6ff", "#bfdbfe");
+  text("AI 會話：餐廳情境", 58, 270, 20, "#1d4ed8", 900);
+  text("おすすめは何ですか？", 58, 312, 20, "#172033", 800);
+  rounded(60, 380, canvas.width - 120, 54, "#fff7ed", "#fed7aa");
+  text("小組進度 86%", 84, 414, 20, "#c2410c", 900);
+}
+
+function drawConsulting() {
+  clear("#fbfbff"); drawGrid();
+  text("Voice of Customer Analysis", 32, 48, 24, "#312e81", 900);
+  const labels = ["正向", "風險", "需求", "建議"];
+  labels.forEach((label, i) => {
+    const x = 70 + (i % 2) * 390, y = 90 + Math.floor(i / 2) * 180;
+    rounded(x, y, 320, 128, i === 1 ? "#fee2e2" : "#eef2ff", "#c7d2fe");
+    text(label, x + 22, y + 42, 24, i === 1 ? "#b91c1c" : "#4338ca", 900);
+    ctx.fillStyle = i === 1 ? "#ef4444" : cssVar("--accent");
+    ctx.fillRect(x + 22, y + 72, 230 - i * 28, 12);
   });
 }
 
-function drawGame(ctx, width, height, accent, accent2, accent3) {
-  const gradient = ctx.createLinearGradient(0, 0, width, height);
-  gradient.addColorStop(0, "#111827");
-  gradient.addColorStop(1, "#2b1111");
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, width, height);
-  ctx.fillStyle = "rgba(255,255,255,0.08)";
-  for (let i = 0; i < 9; i += 1) ctx.fillRect(70 + i * 95, 95 + (i % 3) * 28, 48, 210);
-  ctx.fillStyle = accent3;
-  ctx.fillRect(120, 330, 740, 10);
-  ctx.fillStyle = accent2;
-  ctx.fillRect(210, 240, 58, 88);
-  ctx.fillStyle = accent;
-  ctx.fillRect(675, 218, 74, 110);
-  ctx.fillStyle = "#fff";
-  ctx.font = "700 24px Microsoft JhengHei, Arial";
-  ctx.fillText("玩家：格擋準備", 170, 70);
-  ctx.fillText("敵人 AI：追擊", 610, 70);
-  meter(ctx, 170, 90, 260, "HP", 82, accent);
-  meter(ctx, 610, 90, 260, "Stamina", 64, accent3);
+function drawMood() {
+  clear("#fffafc");
+  const cx = canvas.width / 2, cy = 205;
+  const colors = ["#ec4899", "#14b8a6", "#f59e0b", "#8b5cf6"];
+  for (let i = 0; i < 4; i++) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, 130 - i * 24, -Math.PI / 2, Math.PI * (0.5 + i * .16));
+    ctx.strokeStyle = colors[i]; ctx.lineWidth = 16; ctx.stroke();
+  }
+  text("本週心情羅盤", cx - 82, cy + 8, 24, "#34203d", 900);
+  ["平穩", "疲憊", "期待", "焦慮"].forEach((label, i) => text(label, 54 + i * 132, 390, 18, colors[i], 900));
 }
 
-function meter(ctx, x, y, w, label, value, color) {
-  ctx.fillStyle = "rgba(255,255,255,0.22)";
-  ctx.fillRect(x, y, w, 12);
-  ctx.fillStyle = color;
-  ctx.fillRect(x, y, w * value / 100, 12);
-  ctx.fillStyle = "#fff";
-  ctx.font = "14px Microsoft JhengHei, Arial";
-  ctx.fillText(`${label} ${value}%`, x, y + 34);
+function drawImpact() {
+  clear("#fffdf8");
+  text("補助簡章解析 + 企劃書生成", 34, 48, 24, "#78350f", 900);
+  rounded(42, 84, canvas.width * .42, 250, "#fff7ed", "#fed7aa");
+  rounded(canvas.width * .5, 84, canvas.width * .43, 250, "#f0fdf4", "#bbf7d0");
+  ["服務對象", "預算限制", "效益指標", "佐證資料"].forEach((label, i) => { text(label, 72, 136 + i * 46, 19, "#92400e", 800); ctx.fillStyle = "#f59e0b"; ctx.fillRect(190, 122 + i * 46, 160 + i * 26, 10); });
+  ["RAG 引用", "段落改寫", "審查風險", "輸出草稿"].forEach((label, i) => { text(label, canvas.width * .54, 136 + i * 46, 19, "#047857", 800); });
 }
 
-function roundRect(ctx, x, y, w, h, r) {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.arcTo(x + w, y, x + w, y + h, r);
-  ctx.arcTo(x + w, y + h, x, y + h, r);
-  ctx.arcTo(x, y + h, x, y, r);
-  ctx.arcTo(x, y, x + w, y, r);
-  ctx.closePath();
+function drawCare() {
+  clear("#061522");
+  const a = cssVar("--accent"), b = cssVar("--accent2");
+  const cx = canvas.width / 2, cy = canvas.height / 2;
+  for (let r = 70; r < 260; r += 45) { ctx.beginPath(); ctx.arc(cx, cy, r + Math.sin(pulse / 18) * 4, 0, Math.PI * 2); ctx.strokeStyle = "rgba(14,165,233,.24)"; ctx.lineWidth = 3; ctx.stroke(); }
+  [[cx-170,cy-70],[cx+130,cy-92],[cx-70,cy+115],[cx+170,cy+88]].forEach((p,i)=>{ rounded(p[0]-38,p[1]-24,76,48,i===2?"#ef4444":b); text(i===2?"警報":"安全",p[0]-25,p[1]+7,17,"#fff",900); });
+  text("Wi-Fi CSI 非影像感測", 34, 48, 24, "#ecfeff", 900);
 }
 
-render();
+function drawAdmission() {
+  clear("#ffffff");
+  text("Admissions / Event Pipeline", 32, 46, 24, "#1d4ed8", 900);
+  const stages = [["報名", 184], ["付款", 128], ["審查", 96], ["錄取", 42]];
+  stages.forEach((s, i) => {
+    const x = 70 + i * 220, h = 250 - i * 42;
+    rounded(x, 120 + i * 21, 150, h, i % 2 ? cssVar("--accent2") : cssVar("--accent"), "#fff");
+    text(s[0], x + 48, 160 + i * 21, 22, "#fff", 900);
+    text(String(s[1]), x + 48, 215 + i * 21, 34, "#fff", 900);
+  });
+}
+
+function drawFitness() {
+  clear("#fbfff7");
+  const a = cssVar("--accent2");
+  text("Pose Coach", 34, 46, 24, "#14532d", 900);
+  ctx.strokeStyle = a; ctx.lineWidth = 10; ctx.lineCap = "round";
+  const pts = { head:[180,100], neck:[180,158], hip:[185,260], lk:[130,360], la:[92,462], rk:[252,360], ra:[300,462], lh:[115,220], rh:[245,220] };
+  ctx.beginPath(); ctx.arc(pts.head[0],pts.head[1],34,0,Math.PI*2); ctx.stroke();
+  [["neck","hip"],["neck","lh"],["neck","rh"],["lh","rh"],["hip","lk"],["lk","la"],["hip","rk"],["rk","ra"]].forEach(([p,q])=>{ctx.beginPath();ctx.moveTo(...pts[p]);ctx.lineTo(...pts[q]);ctx.stroke();});
+  rounded(32, 492, 300, 54, "#ecfccb", "#bef264"); text("姿勢準確率 91%", 76, 527, 22, "#365314", 900);
+}
+
+function drawStudy() {
+  clear("#ffffff"); drawGrid();
+  text("Study OS Workspace", 30, 44, 24, "#065f46", 900);
+  rounded(44, 80, 210, 300, "#ecfdf5", "#a7f3d0");
+  rounded(292, 80, 220, 300, "#eef2ff", "#c7d2fe");
+  rounded(550, 80, 220, 300, "#fff7ed", "#fed7aa");
+  text("時間軸", 84, 132, 22, "#047857", 900);
+  text("筆記 + 圖解", 326, 132, 22, "#4338ca", 900);
+  text("題庫盲點", 592, 132, 22, "#c2410c", 900);
+  for (let i=0;i<5;i++) { ctx.fillStyle = i%2 ? cssVar("--accent2") : cssVar("--accent"); ctx.fillRect(92, 170+i*34, 120+i*12, 10); }
+  ctx.strokeStyle = "#6366f1"; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(330,240); ctx.lineTo(390,184); ctx.lineTo(450,250); ctx.stroke();
+  ["極限", "文法", "公式"].forEach((v,i)=>text(v, 610, 180+i*56, 20, "#9a3412", 900));
+}
+
+function drawGame() {
+  clear("#07070b");
+  const a = cssVar("--accent"), b = cssVar("--accent2");
+  ctx.fillStyle = "#111827"; ctx.fillRect(0, canvas.height * .62, canvas.width, canvas.height * .38);
+  for (let i=0;i<9;i++) { ctx.fillStyle = "rgba(255,255,255,.06)"; ctx.fillRect(90+i*120, 130+(i%3)*28, 54, 260); }
+  rounded(230, 330, 58, 150, "#d97706"); rounded(640, 300, 72, 180, "#b91c1c");
+  ctx.strokeStyle = b; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(170, 482); ctx.lineTo(canvas.width - 170, 482); ctx.stroke();
+  rounded(250, 90, 280, 56, "rgba(255,255,255,.08)", "rgba(255,255,255,.16)");
+  rounded(620, 90, 280, 56, "rgba(255,255,255,.08)", "rgba(255,255,255,.16)");
+  text("玩家：格擋準備", 274, 124, 24, "#fff", 900); text("敵人 AI：追擊", 646, 124, 24, "#fff", 900);
+  ctx.fillStyle = a; ctx.fillRect(274, 154, 180, 12); ctx.fillStyle = b; ctx.fillRect(646, 154, 190, 12);
+}
+
+function draw() {
+  if (!ctx) return;
+  if (project.layout === "infra") drawInfra();
+  else if (project.layout === "language") drawLanguage();
+  else if (project.layout === "consulting") drawConsulting();
+  else if (project.layout === "mood") drawMood();
+  else if (project.layout === "impact") drawImpact();
+  else if (project.layout === "care") drawCare();
+  else if (project.layout === "admission") drawAdmission();
+  else if (project.layout === "fitness") drawFitness();
+  else if (project.layout === "study") drawStudy();
+  else drawGame();
+}
+
+function showNotice(action) {
+  const notice = document.getElementById("notice");
+  if (!notice) return;
+  const map = {
+    demo: "已切換為全權限公開展示，所有流程皆可瀏覽。",
+    deploy: "已模擬批次開通課程資源。",
+    audit: "已模擬完成課後統一診斷。",
+    start: "已模擬開始低衝擊訓練。",
+    pain: "已記錄疼痛回饋並降低今日強度。"
+  };
+  notice.textContent = map[action] || "已完成模擬操作。";
+}
+
+document.querySelectorAll("[data-action]").forEach((button) => {
+  button.addEventListener("click", () => {
+    pulse += 10;
+    showNotice(button.dataset.action);
+    draw();
+  });
+});
+
+if (project.layout === "care") {
+  setInterval(() => { pulse += 1; draw(); }, 900);
+}
+
+draw();
